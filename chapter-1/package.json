@@ -1,0 +1,20 @@
+{
+  "name": "chapter-1",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "echo \"Running dev scripts\"",
+    "build": "echo \"Running build scripts\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "react": "^18.3.1"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}

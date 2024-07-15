@@ -1,0 +1,28 @@
+{
+	"name": "yaycha-api",
+	"version": "1.0.0",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"prisma": {
+		"seed": "node prisma/seeds/main.js"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"description": "",
+	"dependencies": {
+		"@faker-js/faker": "^8.4.1",
+		"@prisma/client": "^5.16.1",
+		"bcrypt": "^5.1.1",
+		"body-parser": "^1.20.2",
+		"cors": "^2.8.5",
+		"express": "^4.19.2",
+		"jsonwebtoken": "^9.0.2",
+		"nodemon": "^3.1.4"
+	},
+	"devDependencies": {
+		"prisma": "^5.16.1"
+	}
+}
