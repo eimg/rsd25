@@ -12,7 +12,7 @@ Full-Stack JavaScript Developer များ သိရှိရန်လို�
 * React Native, Expo
 * Next.js
 
-Authentication, Tailwind CSS, shadcn/ui စသည့် ဆက်စပ်နည်းပညာများလည်း ပါဝင်သည်။ React နှင့် ရေးသားသည့် Social Media ပရာဂျက်တစ်ခု၊ React Native နှင့် ရေးသားသည့် Pay App UI တစ်ခု၊ Next.js နှင့် ရေးသားသည့် Mobile Directory တစ်ခု စုစုပေါင်း လက်တွေ့နမူနာပရောဂျက် (၃) ခုပါဝင်သည်။
+Authentication, Tailwind CSS, shadcn/ui စသည့် ဆက်စပ်နည်းပညာများလည်း ပါဝင်သည်။ React နှင့် ရေးသားသည့် Social Media ပရောဂျက်တစ်ခု၊ React Native နှင့် ရေးသားသည့် Pay App UI တစ်ခု၊ Next.js နှင့် ရေးသားသည့် Movie Directory တစ်ခု စုစုပေါင်း လက်တွေ့နမူနာပရောဂျက် (၃) ခုပါဝင်သည်။
 
 ## လိုအပ်ချက်
 [Professional Web Developer 2023](https://eimaung.com/pwd2023) စာအုပ်ပါ နည်းပညာများ (သို့မဟုတ်) အလားတူနည်းပညာ အခြေခံရှိသူများ ဖတ်ရှုလေ့လာရန် သင့်တော်သည်။ အနည်းဆုံး [JavaScript လိုတိုရှင်း](https://eimaung.com/jsbook) စာအုပ်ကို လေ့လာဖတ်ရှုပြီးသူ (သို့မဟုတ်) JavaScript အခြေခံရှိသူဖြစ်ရန် လိုအပ်ပါသည်။

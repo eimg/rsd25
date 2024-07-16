@@ -2,9 +2,9 @@ import { Text, View, StyleSheet, SafeAreaView, Platform } from "react-native";
 
 import { LinearGradient } from "expo-linear-gradient";
 
-import Transactions from "./conponents/Transactions";
-import ActionButton from "./conponents/ActionButton";
-import BalanceCard from "./conponents/BalanceCard";
+import Transactions from "./components/Transactions";
+import ActionButton from "./components/ActionButton";
+import BalanceCard from "./components/BalanceCard";
 
 export default function Home() {
 	return (
