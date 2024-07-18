@@ -21,9 +21,9 @@ export default function Item({ item, remove, primary, comment }) {
 
 			<CardContent
 				onClick={() => {
-                    if(comment) return false;
-                    navigate(`/comments/${item.id}`);
-                }}
+					if (comment) return false;
+					navigate(`/comments/${item.id}`);
+				}}
 				sx={{ cursor: "pointer" }}>
 				<Box
 					sx={{

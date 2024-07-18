@@ -17,7 +17,7 @@ export default function RootLayout({ children }) {
 			<body className={inter.className}>
 				<div className="mx-4 m-auto">
 					<Header />
-                    
+
 					<section className="flex gap-4 min-h-[500px]">
 						<Sidebar />
 						<main className="border-l border-slate-300 px-4">

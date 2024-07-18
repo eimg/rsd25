@@ -7,7 +7,7 @@ import {
 	Add as AddIcon,
 	LightMode as LightModeIcon,
 	DarkMode as DarkModeIcon,
-    ArrowBack as BackIcon,
+	ArrowBack as BackIcon,
 } from "@mui/icons-material";
 
 import { useLocation, useNavigate } from "react-router-dom";
@@ -15,8 +15,8 @@ import { useLocation, useNavigate } from "react-router-dom";
 export default function Header() {
 	const { setShowDrawer, showForm, setShowForm, mode, setMode } = useApp();
 
-    const { pathname } = useLocation();
-    const navigate = useNavigate();
+	const { pathname } = useLocation();
+	const navigate = useNavigate();
 
 	return (
 		<AppBar position="static">

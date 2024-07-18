@@ -20,6 +20,6 @@ function C() {
 
 console.log(A());
 B().then(res => {
-    console.log(res);
-    console.log(C());
+	console.log(res);
+	console.log(C());
 });

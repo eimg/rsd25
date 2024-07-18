@@ -27,7 +27,7 @@ export default async function sidebar() {
 			{genres.map(genre => {
 				return (
 					<Button
-                        key={genre.id}
+						key={genre.id}
 						className="justify-start"
 						variant="outline"
 						asChild>

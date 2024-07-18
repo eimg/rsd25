@@ -4,7 +4,7 @@ import List from "./List";
 import Item from "./Item";
 
 export default function App() {
-    const [showForm, setShowForm] = useState(false);
+	const [showForm, setShowForm] = useState(false);
 
 	const [data, setData] = useState([
 		{ id: 1, content: "Hello, World!", name: "Alice" },
@@ -12,9 +12,9 @@ export default function App() {
 		{ id: 3, content: "Yay, interesting.", name: "Chris" },
 	]);
 
-    const remove = id => {
-        setData(data.filter(item => item.id !== id));
-    }
+	const remove = id => {
+		setData(data.filter(item => item.id !== id));
+	};
 
 	return (
 		<div style={{ maxWidth: 600, margin: "20px auto" }}>

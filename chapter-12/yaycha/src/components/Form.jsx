@@ -15,18 +15,20 @@ export default function Form({ add }) {
 
 				e.currentTarget.reset();
 			}}>
-			<Box
-				sx={{ mb: 4, textAlign: "right" }}>
+			<Box sx={{ mb: 4, textAlign: "right" }}>
 				<TextField
 					inputRef={contentRef}
 					type="text"
 					placeholder="Content"
 					fullWidth
 					multiline
-                    
-                    sx={{ mb: 1 }}
+					sx={{ mb: 1 }}
 				/>
-				<Button variant="contained" type="submit">Post</Button>
+				<Button
+					variant="contained"
+					type="submit">
+					Post
+				</Button>
 			</Box>
 		</form>
 	);

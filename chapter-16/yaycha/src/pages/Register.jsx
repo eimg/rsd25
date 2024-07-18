@@ -36,7 +36,7 @@ export default function Register() {
 		onError: async () => {
 			setError("Cannot create account");
 		},
-		onSuccess: async user => {
+		onSuccess: async () => {
 			setGlobalMsg("Account Created");
 			navigate("/login");
 		},

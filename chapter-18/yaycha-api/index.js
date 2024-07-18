@@ -20,7 +20,7 @@ const { wsRouter } = require("./routers/ws");
 app.use("/", wsRouter);
 
 const server = app.listen(8000, () => {
-    console.log("Yaycha API started at 8000...");
+	console.log("Yaycha API started at 8000...");
 });
 
 const gracefulShutdown = async () => {

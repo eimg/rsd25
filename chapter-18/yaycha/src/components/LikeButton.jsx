@@ -1,12 +1,8 @@
-import {
-    IconButton,
-    ButtonGroup,
-    Button
-} from "@mui/material";
+import { IconButton, ButtonGroup, Button } from "@mui/material";
 
 import {
-    Favorite as LikedIcon,
-    FavoriteBorder as LikeIcon
+	Favorite as LikedIcon,
+	FavoriteBorder as LikeIcon,
 } from "@mui/icons-material";
 
 import { useNavigate } from "react-router-dom";
@@ -15,10 +11,10 @@ import { useApp, queryClient } from "../ThemedApp";
 import { useMutation } from "react-query";
 
 import {
-    postPostLike,
-    deletePostLike,
-    postCommentLike,
-    deleteCommentLike,
+	postPostLike,
+	deletePostLike,
+	postCommentLike,
+	deleteCommentLike,
 } from "../libs/fetcher";
 
 export default function LikeButton({ item, comment }) {
@@ -27,7 +23,7 @@ export default function LikeButton({ item, comment }) {
 
 	function isLiked() {
 		if (!auth) return false;
-        if (!item.likes) return false;
+		if (!item.likes) return false;
 
 		return item.likes.find(like => like.userId == auth.id);
 	}

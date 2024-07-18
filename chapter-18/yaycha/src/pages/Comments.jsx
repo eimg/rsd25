@@ -38,12 +38,12 @@ export default function Comments() {
 	});
 
 	const removePost = useMutation(async id => deletePost(id), {
-        onSuccess: async () => {
-            await queryClient.refetchQueries("posts");
+		onSuccess: async () => {
+			await queryClient.refetchQueries("posts");
 
-            navigate("/");
+			navigate("/");
 			setGlobalMsg("A post deleted");
-        }
+		},
 	});
 
 	const removeComment = useMutation(async id => deleteComment(id), {
@@ -85,7 +85,7 @@ export default function Comments() {
 						key={comment.id}
 						item={comment}
 						remove={removeComment.mutate}
-                        owner={data.userId}
+						owner={data.userId}
 					/>
 				);
 			})}

@@ -1,4 +1,4 @@
-import { Box, Button, TextField, Typography, Alert } from "@mui/material";
+import { Alert, Box, Button, TextField, Typography } from "@mui/material";
 
 import { useRef, useState } from "react";
 
@@ -36,7 +36,7 @@ export default function Register() {
 		onError: async () => {
 			setError("Cannot create account");
 		},
-		onSuccess: async user => {
+		onSuccess: async () => {
 			setGlobalMsg("Account Created");
 			navigate("/login");
 		},

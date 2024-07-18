@@ -11,7 +11,9 @@ import {
 export default function UserList({ title }) {
 	return (
 		<Box>
-			<Typography variant="h4" sx={{ mb: 3}}>
+			<Typography
+				variant="h4"
+				sx={{ mb: 3 }}>
 				{title}
 			</Typography>
 			<List>

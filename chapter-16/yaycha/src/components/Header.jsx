@@ -1,20 +1,14 @@
 import { useApp } from "../ThemedApp";
 
-import {
-    Box,
-    AppBar,
-    Toolbar,
-    Typography,
-    IconButton
-} from "@mui/material";
+import { Box, AppBar, Toolbar, Typography, IconButton } from "@mui/material";
 
 import {
-    Menu as MenuIcon,
-    Add as AddIcon,
-    LightMode as LightModeIcon,
-    DarkMode as DarkModeIcon,
-    ArrowBack as BackIcon,
-    Search as SearchIcon
+	Menu as MenuIcon,
+	Add as AddIcon,
+	LightMode as LightModeIcon,
+	DarkMode as DarkModeIcon,
+	ArrowBack as BackIcon,
+	Search as SearchIcon,
 } from "@mui/icons-material";
 
 import { useLocation, useNavigate } from "react-router-dom";

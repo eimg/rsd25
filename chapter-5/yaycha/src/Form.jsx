@@ -61,7 +61,7 @@ export default function Form({ add }) {
 					background: "#0d6efd",
 					color: "white",
 					border: "0 none",
-                    borderRadius: 5,
+					borderRadius: 5,
 				}}>
 				Post
 			</button>

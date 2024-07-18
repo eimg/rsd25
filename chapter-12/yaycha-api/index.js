@@ -16,11 +16,11 @@ const { userRouter } = require("./routers/user");
 app.use("/", userRouter);
 
 app.get("/info", (req, res) => {
-    res.json({ msg: "Yaycha API" });
+	res.json({ msg: "Yaycha API" });
 });
 
 const server = app.listen(8000, () => {
-    console.log("Yaycha API started at 8000...");
+	console.log("Yaycha API started at 8000...");
 });
 
 const gracefulShutdown = async () => {

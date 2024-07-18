@@ -28,7 +28,7 @@ import { useApp } from "../ThemedApp";
 export default function AppDrawer() {
 	const { showDrawer, setShowDrawer, auth, setAuth } = useApp();
 
-    const navigate = useNavigate();
+	const navigate = useNavigate();
 
 	return (
 		<div>

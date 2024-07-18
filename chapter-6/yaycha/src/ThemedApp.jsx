@@ -11,12 +11,12 @@ const theme = createTheme({
 
 const AppContext = createContext();
 
-export function useApp () {
-    return useContext(AppContext);
+export function useApp() {
+	return useContext(AppContext);
 }
 
 export default function ThemedApp() {
-    const [showForm, setShowForm] = useState(false);
+	const [showForm, setShowForm] = useState(false);
 
 	return (
 		<ThemeProvider theme={theme}>

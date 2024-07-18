@@ -6,8 +6,7 @@ import Item from "../components/Item";
 export default function Profile() {
 	return (
 		<Box>
-			<Box
-				sx={{ bgcolor: "banner", height: 150, borderRadius: 4 }}></Box>
+			<Box sx={{ bgcolor: "banner", height: 150, borderRadius: 4 }}></Box>
 			<Box
 				sx={{
 					mb: 4,
@@ -22,7 +21,7 @@ export default function Profile() {
 				<Box sx={{ textAlign: "center" }}>
 					<Typography>Alice</Typography>
 					<Typography sx={{ fontSize: "0.8em", color: "text.fade" }}>
-						Alice's profile bio content here
+						Alice profile bio content here
 					</Typography>
 				</Box>
 			</Box>

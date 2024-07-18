@@ -1,9 +1,4 @@
-import {
-	Text,
-	View,
-	ScrollView,
-	StyleSheet,
-} from "react-native";
+import { Text, View, ScrollView, StyleSheet } from "react-native";
 
 import { MaterialIcons } from "@expo/vector-icons";
 import { useState } from "react";

@@ -31,12 +31,12 @@ export default function FxRate() {
 		);
 	}
 
-    const convert = code => {
-        const usd = amount > 0 ? amount : 1;
-        if(!data.rates[code]) return 0;
-        
-        return usd * data.rates[code];
-    }
+	const convert = code => {
+		const usd = amount > 0 ? amount : 1;
+		if (!data.rates[code]) return 0;
+
+		return usd * data.rates[code];
+	};
 
 	return (
 		<View style={{ padding: 20 }}>
@@ -136,16 +136,16 @@ const styles = StyleSheet.create({
 		paddingTop: 10,
 		paddingBottom: 10,
 	},
-    item: {
-        flexDirection: "row",
-        gap: 10,
-        alignItems: "center",
-        paddingTop: 15,
-        paddingBottom: 15,
-        borderBottomWidth: 1,
-        borderBottomColor: "#ddd",
-    },
-    result: {
-        fontSize: 18,
-    }
+	item: {
+		flexDirection: "row",
+		gap: 10,
+		alignItems: "center",
+		paddingTop: 15,
+		paddingBottom: 15,
+		borderBottomWidth: 1,
+		borderBottomColor: "#ddd",
+	},
+	result: {
+		fontSize: 18,
+	},
 });

@@ -47,7 +47,7 @@ export default function Comments() {
 						placeholder="Your Comment"
 					/>
 					<Button
-                        type="submit"
+						type="submit"
 						variant="contained">
 						Reply
 					</Button>

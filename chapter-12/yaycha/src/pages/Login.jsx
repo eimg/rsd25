@@ -4,20 +4,25 @@ import { useNavigate } from "react-router-dom";
 import { useApp } from "../ThemedApp";
 
 export default function Login() {
-    const navigate = useNavigate();
-    const { setAuth } = useApp();
+	const navigate = useNavigate();
+	const { setAuth } = useApp();
 
 	return (
 		<Box>
 			<Typography variant="h3">Login</Typography>
 
-            <Alert severity="warning" sx={{ mt: 2 }}>All fields required</Alert>
+			<Alert
+				severity="warning"
+				sx={{ mt: 2 }}>
+				All fields required
+			</Alert>
 
-			<form onSubmit={e => {
-                e.preventDefault();
-                setAuth(true);
-                navigate("/");
-            }}>
+			<form
+				onSubmit={e => {
+					e.preventDefault();
+					setAuth(true);
+					navigate("/");
+				}}>
 				<Box
 					sx={{
 						display: "flex",
@@ -35,7 +40,7 @@ export default function Login() {
 						fullWidth
 					/>
 					<Button
-                        type="submit"
+						type="submit"
 						variant="contained"
 						fullWidth>
 						Login

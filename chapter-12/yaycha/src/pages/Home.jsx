@@ -34,9 +34,7 @@ export default function Home() {
 		}
 	);
 
-	const add = (content, name) => {
-		const id = data[0].id + 1;
-		setData([{ id, content, name }, ...data]);
+	const add = () => {
 		setGlobalMsg("A post added");
 	};
 

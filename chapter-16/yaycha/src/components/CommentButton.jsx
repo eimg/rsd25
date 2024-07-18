@@ -1,12 +1,6 @@
-import {
-    IconButton,
-    ButtonGroup,
-    Button
-} from "@mui/material";
+import { IconButton, ButtonGroup, Button } from "@mui/material";
 
-import {
-    ChatBubbleOutline as CommentIcon
-} from "@mui/icons-material";
+import { ChatBubbleOutline as CommentIcon } from "@mui/icons-material";
 
 export default function Item({ item, comment }) {
 	return (

@@ -8,7 +8,7 @@ import {
 	ListItemButton,
 	ListItemSecondaryAction,
 	ListItemText,
-    TextField,
+	TextField,
 } from "@mui/material";
 
 import { useState } from "react";
@@ -18,10 +18,13 @@ import { fetchSearch } from "../libs/fetcher";
 import FollowButton from "../components/FollowButton";
 
 import { useDebounce } from "@uidotdev/usehooks";
+import { useNavigate } from "react-router-dom";
 
 export default function Search() {
 	const [query, setQuery] = useState("");
 	const debouncedQuery = useDebounce(query, 500);
+
+	const navigate = useNavigate();
 
 	const { isLoading, isError, error, data } = useQuery(
 		["search", debouncedQuery],

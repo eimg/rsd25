@@ -3,7 +3,7 @@ import { useContext } from "react";
 import { AppContext } from "./ThemedApp";
 
 export default function Item({ item, remove }) {
-    const { mode } = useContext(AppContext);
+	const { mode } = useContext(AppContext);
 
 	return (
 		<li

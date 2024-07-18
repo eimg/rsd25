@@ -75,24 +75,24 @@ export default function ThemedApp() {
 	const [auth, setAuth] = useState(null);
 	const [mode, setMode] = useState("dark");
 
-    useEffect(() => {
-        fetchVerify().then(user => {
-            if(user) setAuth(user);
-        });
-    }, []);
+	useEffect(() => {
+		fetchVerify().then(user => {
+			if (user) setAuth(user);
+		});
+	}, []);
 
-    const theme = useMemo(() => {
-        return createTheme({
-            palette: {
-                mode,
-                primary: deepPurple,
-                banner: mode === "dark" ? grey[800] : grey[200],
-                text: {
-                    fade: grey[500],
-                },
-            },
-        });
-    }, [mode]);
+	const theme = useMemo(() => {
+		return createTheme({
+			palette: {
+				mode,
+				primary: deepPurple,
+				banner: mode === "dark" ? grey[800] : grey[200],
+				text: {
+					fade: grey[500],
+				},
+			},
+		});
+	}, [mode]);
 
 	return (
 		<ThemeProvider theme={theme}>
@@ -111,7 +111,7 @@ export default function ThemedApp() {
 				}}>
 				<QueryClientProvider client={queryClient}>
 					<RouterProvider router={router} />
-                    <AppSocket />
+					<AppSocket />
 				</QueryClientProvider>
 				<CssBaseline />
 			</AppContext.Provider>

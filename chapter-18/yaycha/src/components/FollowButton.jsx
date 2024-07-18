@@ -7,7 +7,7 @@ import { postFollow, deleteFollow } from "../libs/fetcher";
 export default function FollowButton({ user }) {
 	const { auth } = useApp();
 
-    if (!auth) return <></>;
+	if (!auth) return <></>;
 
 	function isFollowing() {
 		return user.following.find(item => item.followerId == auth.id);

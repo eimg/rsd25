@@ -25,43 +25,42 @@ export default function ThemedApp() {
 	const [auth, setAuth] = useState(null);
 	const [mode, setMode] = useState("dark");
 
-    const theme = useMemo(() => {
-        return createTheme({
-            palette: {
-                mode,
-                primary: deepPurple,
-                banner: mode === "dark" ? grey[800] : grey[200],
-                text: {
-                    fade: grey[500],
-                },
-            },
-        });
-    }, [mode]);
+	const theme = useMemo(() => {
+		return createTheme({
+			palette: {
+				mode,
+				primary: deepPurple,
+				banner: mode === "dark" ? grey[800] : grey[200],
+				text: {
+					fade: grey[500],
+				},
+			},
+		});
+	}, [mode]);
 
 	return (
 		<ThemeProvider theme={theme}>
 			<AppContext.Provider
 				value={{
-                    showDrawer,
+					showDrawer,
 					setShowDrawer,
 					showForm,
 					setShowForm,
-                    globalMsg,
-                    setGlobalMsg,
+					globalMsg,
+					setGlobalMsg,
 					auth,
 					setAuth,
 					mode,
 					setMode,
 				}}>
-                    
 				<App />
 				<AppDrawer />
 
 				<Snackbar
-                    anchorOrigin={{ 
-                        horizontal: "center",
-                        vertical: "bottom",
-                     }}
+					anchorOrigin={{
+						horizontal: "center",
+						vertical: "bottom",
+					}}
 					open={Boolean(globalMsg)}
 					autoHideDuration={6000}
 					onClose={() => setGlobalMsg(null)}

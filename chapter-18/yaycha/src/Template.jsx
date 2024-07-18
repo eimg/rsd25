@@ -7,7 +7,6 @@ import AppDrawer from "./components/AppDrawer";
 
 import { useApp } from "./ThemedApp";
 
-
 export default function Template() {
 	const { globalMsg, setGlobalMsg } = useApp();
 

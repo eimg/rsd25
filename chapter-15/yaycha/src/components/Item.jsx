@@ -16,7 +16,7 @@ export default function Item({ item, remove, primary, comment, owner }) {
 	const { auth } = useApp();
 
 	function isOwner() {
-        if(!auth) return false;
+		if (!auth) return false;
 		return auth.id == item.userId || auth.id == owner;
 	}
 

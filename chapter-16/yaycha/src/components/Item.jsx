@@ -1,15 +1,9 @@
-import {
-    Box,
-    Card,
-    CardContent,
-    Typography,
-    IconButton
-} from "@mui/material";
+import { Box, Card, CardContent, Typography, IconButton } from "@mui/material";
 
 import {
-    Alarm as TimeIcon,
-    AccountCircle as UserIcon,
-    Delete as DeleteIcon
+	Alarm as TimeIcon,
+	AccountCircle as UserIcon,
+	Delete as DeleteIcon,
 } from "@mui/icons-material";
 
 import { useNavigate } from "react-router-dom";
@@ -108,8 +102,14 @@ export default function Item({ item, remove, primary, comment, owner }) {
 						</Typography>
 					</Box>
 					<Box>
-						<LikeButton item={item} comment={comment} />
-						<CommentButton item={item} comment={comment} />
+						<LikeButton
+							item={item}
+							comment={comment}
+						/>
+						<CommentButton
+							item={item}
+							comment={comment}
+						/>
 					</Box>
 				</Box>
 			</CardContent>

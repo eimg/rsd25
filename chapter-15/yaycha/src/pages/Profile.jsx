@@ -1,4 +1,4 @@
-import { Avatar, Box, Typography } from "@mui/material";
+import { Alert, Avatar, Box, Typography } from "@mui/material";
 import { pink } from "@mui/material/colors";
 
 import { useParams } from "react-router-dom";
