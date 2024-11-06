@@ -14,18 +14,18 @@ model User {
     id       Int       @id @default(autoincrement())
     name     String
     username String    @unique
-    bio      String?
-    password String
-    posts    Post[]
-    comments Comment[]
+    bio      String?   // Optional field, handle nulls in application logic
+    password String    // Store hashed passwords for security
+    posts    Post[]    @relation(onDelete: CASCADE) // Optional cascading delete
+    comments Comment[]  @relation(onDelete: CASCADE) // Optional cascading delete
     created  DateTime  @default(now())
 }
 
 model Post {
     id       Int       @id @default(autoincrement())
     content  String
-    user     User      @relation(fields: [userId], references: [id])
-    userId   Int
+    user     User      @relation(fields: [userId], references: [id], onDelete: CASCADE) // Optional cascading delete
+    userId   Int      // Consider indexing this for performance
     comments Comment[]
     created  DateTime  @default(now())
 }
@@ -33,9 +33,9 @@ model Post {
 model Comment {
     id      Int      @id @default(autoincrement())
     content String
-    user    User     @relation(fields: [userId], references: [id])
-    userId  Int
-    post    Post     @relation(fields: [postId], references: [id])
-    postId  Int
+    user    User     @relation(fields: [userId], references: [id], onDelete: CASCADE) // Optional cascading delete
+    userId  Int      // Consider indexing this for performance
+    post    Post     @relation(fields: [postId], references: [id], onDelete: CASCADE) // Optional cascading delete
+    postId  Int      // Consider indexing this for performance
     created DateTime @default(now())
 }
