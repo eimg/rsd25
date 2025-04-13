@@ -186,12 +186,13 @@ router.post("/like/comments/:id", auth, async (req, res) => {
 			commentId: Number(id),
 			userId: Number(user.id),
 		},
+        include: { comment: true },
 	});
 
 	await addNoti({
 		type: "like",
 		content: "likes your comment",
-		postId: id,
+		postId: like.comment.postId,
 		userId: user.id,
 	});
 
